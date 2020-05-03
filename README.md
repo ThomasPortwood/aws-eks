@@ -1,4 +1,4 @@
-# kube-airflow
+# aws-eks
 Terraform infrastructure definition for AWS Elastic Kubernetes Service cluster
 
 Steps:
