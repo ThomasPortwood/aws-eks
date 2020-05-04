@@ -30,6 +30,7 @@ resource "aws_iam_role_policy_attachment" "eks-ecr-read-policy-attachment" {
 
 resource "aws_eks_node_group" "default" {
   cluster_name = aws_eks_cluster.default.name
+  instance_types = ["t3.medium"]
   node_group_name = "default"
   node_role_arn = aws_iam_role.default-node-group.arn
   subnet_ids = [
