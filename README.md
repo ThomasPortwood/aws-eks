@@ -25,7 +25,7 @@ Steps:
 
 5. [Create an ingress controller so we can use the ingress resources on our cluster](https://github.com/kubernetes-sigs/aws-alb-ingress-controller)
     
-6. [Set up authorization to access your Docker registry if necessary](https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/)
+6. [Set up authorization to access your Docker registry from Kubernetes](https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/)
     
 - TODO
     - route table and internet gateway association in terraform
