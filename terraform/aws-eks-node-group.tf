@@ -36,9 +36,9 @@ resource "aws_eks_node_group" "default" {
     aws_subnet.default-us-west-2a.id,
     aws_subnet.default-us-west-2b.id]
   scaling_config {
-    desired_size = 2
-    max_size = 2
-    min_size = 2
+    desired_size = 1
+    max_size = 1
+    min_size = 1
   }
   depends_on = [
     aws_iam_role_policy_attachment.eks-worker-node-policy-attachment,
