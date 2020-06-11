@@ -14,7 +14,7 @@ resource "aws_internet_gateway" "default" {
   }
 }
 
-resource "aws_subnet" "default-us-east-1a" {
+resource "aws_subnet" "us-east-1a" {
   tags = {
     Name                            = "default-us-east-1a"
     "kubernetes.io/cluster/default" = "shared"
@@ -26,7 +26,7 @@ resource "aws_subnet" "default-us-east-1a" {
   cidr_block              = cidrsubnet(aws_vpc.default.cidr_block, 4, 1)
 }
 
-resource "aws_subnet" "default-us-east-1b" {
+resource "aws_subnet" "us-east-1b" {
   tags = {
     Name                            = "default-us-east-1b"
     "kubernetes.io/cluster/default" = "shared"
