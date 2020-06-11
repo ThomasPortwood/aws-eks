@@ -34,8 +34,8 @@ resource "aws_eks_node_group" "default" {
   node_group_name = "default"
   node_role_arn   = aws_iam_role.default-node-group.arn
   subnet_ids = [
-    aws_subnet.default-us-west-2a.id,
-  aws_subnet.default-us-west-2b.id]
+    aws_subnet.default-us-east-1a.id,
+  aws_subnet.default-us-east-1b.id]
   scaling_config {
     desired_size = 1
     max_size     = 1

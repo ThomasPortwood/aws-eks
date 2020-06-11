@@ -30,7 +30,7 @@ resource "aws_eks_cluster" "default" {
   name     = "default"
   role_arn = aws_iam_role.default-cluster.arn
   vpc_config {
-    subnet_ids = [aws_subnet.default-us-west-2a.id, aws_subnet.default-us-west-2b.id]
+    subnet_ids = [aws_subnet.default-us-east-2a.id, aws_subnet.default-us-east-2b.id]
   }
   depends_on = [
     aws_iam_role_policy_attachment.eks-cluster-policy-attachment,
