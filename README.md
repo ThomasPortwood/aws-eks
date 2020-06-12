@@ -29,4 +29,3 @@ Steps:
     
 - TODO
     - route table and internet gateway association in terraform
-    - database security group via terraform
