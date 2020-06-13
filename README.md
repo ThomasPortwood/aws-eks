@@ -24,8 +24,15 @@ Steps:
 4. [Configure access to the new elastic kubernetes service cluster](https://docs.aws.amazon.com/eks/latest/userguide/create-kubeconfig.html)
 
 5. [Create an ingress controller so we can use the ingress resources on our cluster](https://github.com/kubernetes-sigs/aws-alb-ingress-controller)
-    
-6. [Set up authorization to access your Docker registry from Kubernetes](https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/)
+    - update vpc
+    - provide credentials
     
 - TODO
+    - spell out order of operations: 
+        - create vpc and cluster
+        - update tf variables with cluster details
+        - add internet gateway to route table (cidr 0.0.0.0/0, to be fixed)
+        - create node group
     - route table and internet gateway association in terraform
+    - ALB ingress controller in terraform
+    
